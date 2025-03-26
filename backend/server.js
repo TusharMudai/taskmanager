@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/employees', require('./routes/employeeRoutes')); // Updated route
+app.use('/api/employees', require('./routes/taskRoutes')); // Updated route
 
 // Handle undefined routes
 app.use((req, res, next) => {
